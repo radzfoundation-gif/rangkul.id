@@ -6,8 +6,6 @@ import { Home, Users, Briefcase, Settings, LogOut, Bell, Menu, X } from 'lucide-
 import { useState, useEffect } from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import { UserProvider } from "@/contexts/user-context";
-import Sidebar from "@/components/layout/sidebar";
-import Header from "@/components/layout/header";
 import { useChatStore } from "@/hooks/use-chat-store";
 
 // Fallback Sidebar component if the imported one fails or for this specific layout
