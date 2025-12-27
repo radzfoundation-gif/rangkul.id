@@ -29,10 +29,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                     return null
                 }
 
+                const email = credentials.email as string;
                 return {
                     id: result.userId,
-                    email: credentials.email as string,
-                    name: credentials.email?.split('@')[0] || 'User',
+                    email: email,
+                    name: email.split('@')[0] || 'User',
                 }
             },
         }),

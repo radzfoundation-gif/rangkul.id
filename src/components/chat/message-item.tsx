@@ -86,7 +86,7 @@ export default function MessageItem({
                         </span>
                     )}
                     <span className="text-[10px] text-zinc-400">
-                        {format(new Date(message.timestamp), 'HH:mm', { locale: idLocale })}
+                        {message.timestamp ? format(new Date(message.timestamp), 'HH:mm', { locale: idLocale }) : '--:--'}
                     </span>
                     {message.editedAt && (
                         <span className="text-[10px] text-zinc-400 italic">(diedit)</span>

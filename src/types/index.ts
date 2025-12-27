@@ -4,6 +4,7 @@ export type User = {
     avatarUrl?: string; // Color code or image URL
     status: 'online' | 'idle' | 'dnd' | 'offline';
     role: 'admin' | 'moderator' | 'guest';
+    customStatus?: string;
 };
 
 export type Message = {
