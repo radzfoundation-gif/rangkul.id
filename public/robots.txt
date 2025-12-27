@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin pages
+Disallow: /dashboard/settings
+
+# Sitemap
+Sitemap: https://rangkul-app.vercel.app/sitemap.xml
